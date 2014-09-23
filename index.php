@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Harjutus 7</title>
+<style type="text/css">
+	.info > tbody > tr > td {
+		border: 1px solid red;
+		font-size: 20px;
+	}
+</style>
 </head>
 <body>
 <h2>While loop</h2>
@@ -52,5 +58,31 @@ for ($count=1; $count<=20; $count+= 1) {
 
 } 
 ?>
+
+<h2>Foreach loop</h2>
+<ol>
+ <?php
+ 	$companies = array ("Euronics", "New Yorker", "Nordic Hotels", "Eagle Vision", "Microsoft"); 
+ 	foreach ($companies as $company) {
+ 		echo "<li>" . $company . "</li>";
+ 	}
+ ?>
+ </ol>
+
+
+<table class="info">
+ <?php
+    $contact = array(
+        "first_name" => "Ingrid",
+        "last_name" => "Kelder",
+        "e-mail" => "ingrid.kelder@khk.ee",
+        "age" => 20
+    );
+
+    foreach ($contact as $attribute => $value ) {
+        echo "<tr>" . "<td>{$attribute}:</td> <td>{$value}</td><br>" . "</tr>";
+    }
+?>
+</table>
 </body>
 </html>
