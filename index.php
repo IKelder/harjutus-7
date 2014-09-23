@@ -22,5 +22,14 @@
         $count += 100;
     }
 ?>
+
+<!-- <3>Infinite while loop</h3>
+<?php
+    $count = 1;
+
+    while ($count <= 10) {
+        echo $count;
+    }
+?> -->
 </body>
 </html>
