@@ -23,13 +23,21 @@
     }
 ?>
 
-<!-- <3>Infinite while loop</h3>
+<h3>Conditional statements in while loop</h3>
 <?php
     $count = 1;
 
     while ($count <= 10) {
-        echo $count;
+    	if ($count == 3) {
+    		echo "kolm" . ", ";
+    	} elseif ($count == 7) {
+    		echo "seitse" . ", ";
+    	} else {
+    		echo $count . ", ";
+    	}
+
+    	$count += 1;
     }
-?> -->
+?>
 </body>
 </html>
