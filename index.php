@@ -39,5 +39,18 @@
     	$count += 1;
     }
 ?>
+
+<h2>For loop</h2>
+<?php 
+for ($count=1; $count<=20; $count+= 1) {
+ if ($count % 2 == 0) {
+   echo "Number $count on paarisarv." . "<br>";
+  }
+  else {
+   echo "Number $count on paaritu arv." . "<br>";
+  }
+
+} 
+?>
 </body>
 </html>
